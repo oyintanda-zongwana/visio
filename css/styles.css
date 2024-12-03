@@ -357,3 +357,137 @@ img {
         font-size: 14px;
     }
 }
+
+/* For devices with a max-width of 1024px (tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    .slider img {
+        height: 400px;
+    }
+
+    .text-overlay {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .text-overlay-2 {
+        left: 105%;
+        width: 25%;
+    }
+
+    .next, .prev {
+        font-size: 80px;
+    }
+
+    .text_icon {
+        width: 100%;
+    }
+
+    .text, .icons {
+        width: 90%;
+        margin-top: 5%;
+    }
+}
+
+/* For devices with a max-width of 768px (small tablets and large phones) */
+@media (max-width: 768px) {
+    .slider img {
+        height: 300px;
+    }
+
+    .text-overlay {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .text-overlay-2 {
+        left: 100%;
+        width: 30%;
+    }
+
+    .next, .prev {
+        font-size: 60px;
+    }
+
+    .text_icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text, .icons {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .dots {
+        left: 50%;
+        bottom: 5%;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+/* For devices with a max-width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .slider img {
+        height: 200px;
+    }
+
+    .text-overlay {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .text-overlay-2 {
+        left: 90%;
+        width: 35%;
+    }
+
+    .next, .prev {
+        font-size: 50px;
+    }
+
+    .text_icon {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .text, .icons {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .dots {
+        bottom: 3%;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* For extra-small devices with a max-width of 360px (small phones) */
+@media (max-width: 360px) {
+    .slider img {
+        height: 150px;
+    }
+
+    .text-overlay {
+        width: 95%;
+        font-size: 0.8rem;
+    }
+
+    .text-overlay-2 {
+        left: 85%;
+        width: 40%;
+    }
+
+    .next, .prev {
+        font-size: 40px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+}
