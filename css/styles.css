@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 nav {
@@ -134,12 +135,6 @@ nav img {
     display: block;
 }
 
-@media screen and (max-width: 768px) {
-    .dropdown-menu {
-        width: 100%;
-    }
-}
-
 .slider {
     position: relative;
     max-width: 1200px;
@@ -196,9 +191,13 @@ img {
     top: 50%;
     transform: translateY(-50%);
     padding: 16px;
-    font-weight: 100;
+    width: 101px;
+    height: 118px;
+    background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
     color: white;
-    font-size: 100px;
     cursor: pointer;
 }
 
@@ -236,6 +235,7 @@ img {
 .text_icon {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 1355px;
     margin-top: 2%;
 }
@@ -292,6 +292,7 @@ img {
 .three {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 2%;
 }
 
@@ -310,6 +311,7 @@ img {
 .four {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 1%;
 }
 
@@ -358,7 +360,6 @@ img {
     }
 }
 
-/* For devices with a max-width of 1024px (tablets and smaller laptops) */
 @media (max-width: 1024px) {
     .slider img {
         height: 400px;
@@ -388,7 +389,6 @@ img {
     }
 }
 
-/* For devices with a max-width of 768px (small tablets and large phones) */
 @media (max-width: 768px) {
     .slider img {
         height: 300px;
@@ -401,10 +401,10 @@ img {
 
     .text-overlay-2 {
         left: 100%;
-        width: 30%;
+        width: 10%;
     }
 
-    .next, .prev {
+    .next {
         font-size: 60px;
     }
 
@@ -428,20 +428,26 @@ img {
     }
 }
 
-/* For devices with a max-width of 480px (mobile phones) */
 @media (max-width: 480px) {
     .slider img {
         height: 200px;
     }
 
+    .next {
+        width: 30px;
+        height: 31px;
+    }
+
     .text-overlay {
         width: 90%;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
+        left: 20%;
     }
 
     .text-overlay-2 {
-        left: 90%;
-        width: 35%;
+        left: 100%;
+        width: 10%;
+        height: 20%;
     }
 
     .next, .prev {
@@ -467,24 +473,31 @@ img {
     }
 }
 
-/* For extra-small devices with a max-width of 360px (small phones) */
 @media (max-width: 360px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .slider img {
         height: 150px;
     }
 
     .text-overlay {
-        width: 95%;
-        font-size: 0.8rem;
+        width: 90%;
+        font-size: 0.6rem;
+        left: 20%;
     }
 
     .text-overlay-2 {
-        left: 85%;
-        width: 40%;
+        left: 100%;
+        width: 10%;
+        height: 20%;
     }
 
-    .next, .prev {
-        font-size: 40px;
+    .next {
+        width: 30px;
+        height: 31px;
     }
 
     .footer p {
