@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    // When the checkbox (menu button) is clicked
+    $('.menu').on('change', function() {
+        // Check if the checkbox is checked
+        if ($(this).is(':checked')) {
+            // Show the dropdown menu
+            $('.dropdown-menu').slideDown(300); // You can adjust the speed
+        } else {
+            // Hide the dropdown menu
+            $('.dropdown-menu').slideUp(300); // You can adjust the speed
+        }
+    });
+});
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
