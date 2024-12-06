@@ -325,7 +325,7 @@ img {
 
 @media (max-width: 768px) {
 
-    body {
+    * {
         overflow-x: hidden;
     }
 
@@ -336,7 +336,7 @@ img {
 
 @media (max-width: 1024px) {
 
-    body {
+    * {
         overflow-x: hidden;
     }
 
@@ -390,7 +390,7 @@ img {
 
 @media (max-width: 768px) {
 
-    body {
+    * {
         overflow-x: hidden;
     }
 
@@ -443,7 +443,7 @@ img {
 
 @media (max-width: 480px) {
 
-    body {
+    * {
         overflow-x: hidden;
     }
 
@@ -495,9 +495,16 @@ img {
     }
 }
 
+@media (max-width: 375px) {
+
+    * {
+        overflow-x: hidden;
+    }
+}
+
 @media (max-width: 360px) {
 
-    body {
+    * {
         overflow-x: hidden;
     }
 
