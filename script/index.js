@@ -51,3 +51,4 @@ function showSlides(n) {
 setInterval(function() {
     plusSlides(1); // Move to the next slide every 5 seconds
 }, 5000);
+   
